@@ -1,4 +1,4 @@
-package com.book.manager.domain.enum
+package com.example.demo.domain.enum
 
 enum class RoleType {
   ADMIN,

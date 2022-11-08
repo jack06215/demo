@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.7.5"
 	id("io.spring.dependency-management") version "1.0.15.RELEASE"
-	id("com.arenagod.gradle.MybatisGenerator") version "1.4" // 追加
+	id("com.thinkimi.gradle.MybatisGenerator") version "2.4" // 追加
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 }
@@ -25,9 +25,6 @@ dependencies {
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4")
 	implementation("org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.2.1") // 追加
 	implementation("mysql:mysql-connector-java:8.0.23") // 追加
-	implementation("org.springframework.boot:spring-boot-starter-security")
-	implementation("org.springframework.session:spring-session-data-redis")
-	implementation("redis.clients:jedis")
 	implementation("org.springframework.boot:spring-boot-starter-aop")
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0") // 追加
 
